@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visison"
+version = "0.1.0"
+description = "Reservation-aware obstacle bypass for autonomous mobile robots in two-lane aisles"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/aadiverma-png/vision"
+Source = "https://github.com/aadiverma-png/vision"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+plot = ["matplotlib>=3.5"]
+
+[tool.setuptools]
+packages = ["visison"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

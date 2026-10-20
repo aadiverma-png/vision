@@ -1,0 +1,36 @@
+# Open-RMF EasyFullControl configuration for the visison_fleet (amr_sim robots: 0.50 x 0.49 m, diff drive).
+rmf_fleet:
+  name: "visison_fleet"
+  limits:
+    linear: [0.8, 0.4]      # velocity m/s, acceleration m/s^2 (scenario.SPEC)
+    angular: [1.2, 2.0]     # velocity rad/s, acceleration rad/s^2
+  profile:
+    footprint: 0.35         # m, radius of the robot's own disc
+    vicinity: 0.5           # m, radius RMF keeps other robots out of
+  reversible: False
+  battery_system:
+    voltage: 24.0
+    capacity: 40.0
+    charging_current: 26.4
+  mechanical_system:
+    mass: 20.0
+    moment_of_inertia: 10.0
+    friction_coefficient: 0.22
+  ambient_system:
+    power: 20.0
+  tool_system:
+    power: 0.0
+  recharge_threshold: 0.10
+  recharge_soc: 1.0
+  publish_fleet_state: 10.0
+  account_for_battery_drain: False
+  task_capabilities:
+    loop: True
+    delivery: False
+  actions: []
+  finishing_request: "nothing"
+  responsive_wait: False
+  robots:
+    r1:
+      charger: "a_park"
+  robot_state_update_frequency: 10.0
