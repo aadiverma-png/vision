@@ -540,3 +540,8 @@ ROS2_Gazebo_Bridge/src/
 - Reciprocal windows apply **only to robots Visison commands**. Other fleets are read-only, by design.
 - `examples/ros2_adapter.py` is an **untested skeleton**, not a supported adapter.
 - The ORCA-DD results above come from the simulator and headless Gazebo runs, not from hardware.
+
+## License
+
+MIT — see [LICENSE](LICENSE). You may copy `visison/` into a closed-source
+product; the only requirement is that the copyright notice travels with it.

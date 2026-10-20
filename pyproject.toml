@@ -8,6 +8,12 @@ version = "0.1.0"
 description = "Reservation-aware obstacle bypass for autonomous mobile robots in two-lane aisles"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
 dependencies = []
 
 [project.urls]
